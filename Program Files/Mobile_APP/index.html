@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquaponics</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/a076d05399.js"></script>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        background-image: url("img/Wave.PNG");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-color: #9fc6ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text">Aquaponics IoT System</div>
+      <ul>
+        <li>
+          <a href="#" class="fish-btn"
+            ><img src="img/FishTank.png" height="25px" />Fish Tank
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="fish-show">
+            <li><a href="Water_Temp.html">Water Temp</a></li>
+            <li><a href="TDS.html">Water Quality</a></li>
+            <li><a href="Water_Level.html">Water Level</a></li>
+            <li><a href="Vibration.html">Tank Vibration</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="plant-btn"
+            ><img src="img/Plant.png" height="25px" />Plant
+            <span class="fas fa-caret-down second"></span>
+          </a>
+          <ul class="plant-show">
+            <li><a href="Soil_Moisture.html">Soil Moisture</a></li>
+            <li><a href="Light_Sensor.html">Light Intensity</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="video-btn"
+            ><img src="img/Camera.PNG" height="25px" />Monitoring
+            <span class="fas fa-caret-down third"></span>
+          </a>
+          <ul class="video-show">
+            <li><a href="FishStream.html">Fish CAM</a></li>
+            <li><a href="PlantStream.html">Plant CAM</a></li>
+          </ul>
+        </li>
+        <li><a href="About_Us.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="header">Welcome to Aquaponics IoT System</div>
+    </div>
+
+    <script>
+      $(".btn").click(function () {
+        $(this).toggleClass("click");
+        $(".sidebar").toggleClass("show");
+      });
+      $(".fish-btn").click(function () {
+        $("nav ul .fish-show").toggleClass("show");
+        $("nav ul .first").toggleClass("rotate");
+      });
+      $(".plant-btn").click(function () {
+        $("nav ul .plant-show").toggleClass("show1");
+        $("nav ul .second").toggleClass("rotate");
+      });
+      $(".video-btn").click(function () {
+        $("nav ul .video-show").toggleClass("show2");
+        $("nav ul .third").toggleClass("rotate");
+      });
+      $("nav ul li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+  </body>
+</html>

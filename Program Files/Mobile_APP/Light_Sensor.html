@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light_Sensor</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        background-image: url("img/Background01.PNG");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-color: #9fc6ff;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html"><img src="img/MenuButton.png" width="50px" /></a>
+    <button onclick="main()">Refresh</button>
+    <script>
+      url = "http://10.0.0.13/Light";
+
+      function Ajax(url, callback) {
+        fetch(url)
+          .then((response) => response.text()) // RETURN A PROMISE: CONVERT RESPONSE.BODY TO TEXT
+          .then((text) => {
+            callback(text);
+          });
+      }
+
+      var Temp = [];
+      function getData(e) {
+        // console.log(e);
+        Temp = e.split(",");
+      }
+
+      function main() {
+        Ajax(url, getData);
+        onload();
+      }
+    </script>
+
+    <script>
+      Ajax(url, getData);
+      window.onload = function () {
+        var dps = [];
+        var chart = new CanvasJS.Chart("chartContainer", {
+          exportEnabled: true,
+          title: {
+            text: "LIGHT DETECTION",
+          },
+          axisY: {
+            title: "Light Intensity [RES: 8192 Steps]",
+            suffix: "",
+          },
+          data: [
+            {
+              type: "spline",
+              markerSize: 0,
+              dataPoints: dps,
+            },
+          ],
+        });
+
+        var xVal = -51;
+        var yVal;
+        var updateInterval = 100;
+        var dataLength = 50;
+
+        var updateChart = function (count) {
+          count = count || 1;
+          console.log(count);
+          for (var j = 0; j < count; j++) {
+            yVal = parseFloat(Temp[xVal]);
+            dps.push({
+              x: xVal,
+              y: yVal,
+            });
+            xVal++;
+            console.log(Temp);
+            if (dps.length > dataLength) {
+              dps.shift();
+            }
+          }
+
+          chart.render();
+        };
+
+        updateChart(dataLength);
+        setInterval(function () {
+          if (xVal > 999) {
+            window.location.reload();
+            return;
+          }
+          updateChart();
+        }, updateInterval);
+      };
+    </script>
+    <div
+      id="chartContainer"
+      style="height: 370px; max-width: 920px; margin: 0px auto"
+    ></div>
+    <script src="js/canvasjs.min.js"></script>
+  </body>
+</html>
