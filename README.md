@@ -6,7 +6,7 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 # Table of Contents
 * [Accomplishments](#accomplishments)
 * [Bill of Materials](#bill-of-materials)
-* [Schematic](#schematic)
+* [System Structure](#system-structure)
 * [How the code works?](https://github.com/ElvisTang123/Multimeter/blob/main/Program%20Files/README.md)
 
 # Accomplishments
@@ -31,7 +31,7 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 | MCU | ESP32 |1|
 | MCU | ESP32_CAM |1|
 
-# Schematic
+# System Structure
 <p align="center">
-  <img src="Media/Schematic.jpg" alt="" width="90%"/>
+  <img src="Media/System_Structure.jpg" alt="" width="90%"/>
 </p>
