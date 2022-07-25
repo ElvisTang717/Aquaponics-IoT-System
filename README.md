@@ -33,5 +33,5 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 
 # System Structure
 <p align="center">
-  <img src="Media/System_Structure.jpg" alt="" width="90%"/>
+  <img src="Media/System_Structure.jpg" alt="" width="70%"/>
 </p>
