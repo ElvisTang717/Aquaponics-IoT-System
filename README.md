@@ -5,7 +5,7 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 
 # Table of Contents
 * [Accomplishments](#accomplishments)
-* [System Specification](#system-specification)
+* [Bill of Materials](#bill-of-materials)
 * [Schematic](#schematic)
 * [How the code works?](https://github.com/ElvisTang123/Multimeter/blob/main/Program%20Files/README.md)
 
@@ -15,7 +15,7 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 * Enabled real-time monitoring by establishing the network between the sensing/controlling components and WebUI/App (in HTML, CSS, JavaScript, and Cordova) through the server created by ESP32
 
 
-# System Specification
+# Bill of Materials
 
 | Parameter | Value | Unit |
 | :-----------:  | :-----------: |:-----------: |
