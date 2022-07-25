@@ -17,18 +17,19 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 
 # Bill of Materials
 
-| Parameter | Value | Unit |
+| Components | Part # | Quantity |
 | :-----------:  | :-----------: |:-----------: |
-| Voltage input| 0-3 | Volts |
-| Input type |DC or most types of AC|---|
-| Input frequency | 0 or 1-1000 |Hz|
-| Freq_out error | +-max(5, 1% of freq) |Hz|
-| Voltage our error| +- .25 |V|
-| Data points used to read |1000|Points/period|
-| Current input necessary | 300 |mA|
-| Power source | USB |---|
-| User interface | USART Terminal |---|
-| Suggested scope probe setting | 1x |---|
+| Water Temparature Sensor| DS18B20 | 1 |
+| Water Quality Sensor |TDS Meter V1.0|1|
+| Water Lavel Sensor | HW-038 |1|
+| Soil Moisture Sensor| YL-69 |1|
+|Light Intensity Sensor|Photoresistance|1|
+| Inertial measurement unit | MPU6050 |1|
+| Water Pump (DC 3v ~ 5V) |---|2|
+| Relay (DC 5V) | --- |3|
+| UV Light (DC 5V) | --- |1|
+| MCU | ESP32 |1|
+| MCU | ESP32_CAM |1|
 
 # Schematic
 <p align="center">
