@@ -45,7 +45,13 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 </p>
 
 # WebUI
+<p align="center">
+  <img src="Media/WebUI.jpg" alt="" width="90%"/>
+</p>
 
 # Mobile App
+<p align="center">
+  <img src="Media/Mobile_App.jpg" alt="" width="90%"/>
+</p>
 
 # Demonstration
