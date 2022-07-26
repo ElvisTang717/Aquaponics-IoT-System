@@ -8,6 +8,9 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 * [Bill of Materials](#bill-of-materials)
 * [System Structure](#system-structure)
 * [High Level Wiring Diagram](#high-level-wiring-diagram)
+* [WebUI](#webui)
+* [Mobile App](#mobile-app)
+* [Demonstration](#demonstration)
 
 # Accomplishments
 * Automated the water-changing process and re-uses the water on plants based on the data/metrics collected
@@ -40,3 +43,9 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 <p align="center">
   <img src="Media/ESP32_WiringDiagram.png" alt="" width="90%"/>
 </p>
+
+# WebUI
+
+# Mobile App
+
+# Demonstration
