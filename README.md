@@ -7,7 +7,7 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 * [Accomplishments](#accomplishments)
 * [Bill of Materials](#bill-of-materials)
 * [System Structure](#system-structure)
-* [How the code works?](https://github.com/ElvisTang123/Multimeter/blob/main/Program%20Files/README.md)
+* [High Level Wiring Diagram](#high-level-wiring-diagram)
 
 # Accomplishments
 * Automated the water-changing process and re-uses the water on plants based on the data/metrics collected
@@ -34,4 +34,9 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 # System Structure
 <p align="center">
   <img src="Media/System_Structure.jpg" alt="" width="90%"/>
+</p>
+
+# High Level Wiring Diagram
+<p align="center">
+  <img src="Media/ESP32_WiringDiagram.png" alt="" width="90%"/>
 </p>
