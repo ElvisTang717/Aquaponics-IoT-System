@@ -41,7 +41,7 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
 
 # High Level Wiring Diagram
 <p align="center">
-  <img src="Media/ESP32_WiringDiagram.png" alt="" width="90%"/>
+  <img src="Media/Wiring_Diagram.png" alt="" width="90%"/>
 </p>
 
 # WebUI
