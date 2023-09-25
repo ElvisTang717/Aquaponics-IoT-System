@@ -1,7 +1,7 @@
 # Aquaponics-IoT-System
 
 # Project Introduction
-Nowadays, people's lifestyle are are getting busier and busier. Thus, having pets like a tank of fish becomes a great way to release the pressure from daily life. However, due to the busyness and the lack of time, people might lose patience in taking care of the fish tank. Hence, having an IoT system that could tell you the real-time data of your fish tank would be truly valuable. What could be better? In this project, we aim to build an aquaponics IoT system that can not only monitor the status of the fish tank but also use the collected data for further actions, such as reusing the tank water to irrigate the plants.<br />
+Nowadays, people's lifestyles are getting busier and busier. Thus, having pets like a tank of fish becomes a great way to release the pressure from daily life. However, due to the busyness and the lack of time, people might lose patience in caring for the fish tank. Hence, having an IoT system that could tell you the real-time data of your fish tank would be truly valuable. What could be better? In this project, we aim to build an aquaponics IoT system that can monitor the fish tank's status and use the collected data for further actions, such as reusing the tank water to irrigate the plants.<br />
 
 # Table of Contents
 * [Accomplishments](#accomplishments)
@@ -39,7 +39,7 @@ Nowadays, people's lifestyle are are getting busier and busier. Thus, having pet
   <img src="Media/System_Structure.jpg" alt="" width="90%"/>
 </p>
 
-# High Level Wiring Diagram
+# High-Level Wiring Diagram
 <p align="center">
   <img src="Media/ESP32_WiringDiagram.png" alt="" width="90%"/>
 </p>
